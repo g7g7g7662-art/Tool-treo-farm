@@ -19,7 +19,6 @@ const rl = readline.createInterface({ input: process.stdin, output: process.stdo
 
 function showMenu() {
     console.clear();
-    // Đã cập nhật chính xác tác giả là bạn: @user_phong75
     console.log(chalk.blue.bold('Created by: ') + chalk.bgCyan.black(' @user_phong75 ') + chalk.blue.bold(' - Tool treo AFK ở Base [Bản Sạch]'));
     console.log(chalk.gray('===============================================\n'));
     
@@ -41,5 +40,12 @@ function showMenu() {
     } else {
         const currentAcc = data.accounts[data.selectedIndex];
         const targetStr = currentAcc.mainAccount ? `TPA -> ${currentAcc.mainAccount}` : 'Chưa gán nick chính';
-        console.log(chalk.white(`[${data.selectedIndex + 1}]: `) + chalk.green(currentAcc.
-        
+        console.log(chalk.white(`[${data.selectedIndex + 1}]: `) + chalk.green(currentAcc.username) + chalk.gray(` (Proxy | ${targetStr})`) + '\n');
+    }
+
+    console.log(chalk.magenta('- Nhập ') + chalk.green("'Add <tên_bot> <mật_khẩu>'") + chalk.magenta(' để thêm tài khoản mới'));
+    console.log(chalk.magenta('- Nhập ') + chalk.green("'Acc <số_thứ_tự> <tên_acc_chính>'") + chalk.magenta(' để chọn bot và gán nick chính nhận TPA'));
+    console.log(chalk.magenta('- Nhập ') + chalk.green("'Proxy <số_thứ_tự> <ip:port>'") + chalk.magenta(' để cài proxy cho acc'));
+    console.log(chalk.magenta('- Nhập ') + chalk.green("'Run'") + chalk.magenta(' để chạy bot đang chọn'));
+    console.log(chalk.magenta('- Nhập ') + chalk.green("'Exit'")
+                                         
