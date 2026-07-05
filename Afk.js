@@ -91,5 +91,5 @@ function askCommand() {
             const idx = parseInt(parts[1]) - 1; const proxyStr = parts[2];
             if (isNaN(idx) || idx < 0 || idx >= data.accounts.length || !proxyStr) { setTimeout(showMenu, 1500); }
             else { data.accounts[idx].proxy = proxyStr; saveConfig(); showMenu(); }
-        }
+            }
         
