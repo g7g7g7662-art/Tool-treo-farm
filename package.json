@@ -1,0 +1,16 @@
+{
+  "name": "kingmc-tool-afk",
+  "version": "1.0.0",
+  "description": "Tool treo may AFK tai Base cho server KingMC",
+  "main": "Afk.js",
+  "scripts": {
+    "start": "node Afk.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.20.0",
+    "chalk": "^4.1.2",
+    "proxy-agent": "^6.4.0"
+  },
+  "author": "dkhanh",
+  "license": "ISC"
+}
